@@ -25,5 +25,5 @@ codegen-units = 1
 opt-level = 3
 strip = true
 
-[workspace.metadata.cross.target.i686-unknown-linux-musl]
+[target.i686-unknown-linux-musl]
 image = "dph5199278/i686-unknown-linux-musl:0.2.5"
