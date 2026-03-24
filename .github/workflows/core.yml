@@ -211,6 +211,8 @@ jobs:
               cargo build --release --target $TARGET $CORE_FEATURES
             fi
           fi
+        env:
+          PROTOC: /usr/bin/protoc
 
       # Copied and slightly modified from @lmq8267 (https://github.com/lmq8267)
       - name: Build Core & Cli (X86_64 FreeBSD)
