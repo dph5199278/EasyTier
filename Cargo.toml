@@ -25,5 +25,5 @@ codegen-units = 1
 opt-level = 3
 strip = true
 
-[patch.crates-io]
+[dependencies]
 ring = { version = "0.17.14", features = ["precompiled"] }
