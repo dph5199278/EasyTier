@@ -62,4 +62,5 @@ fi
 
 if [[ $OS =~ ^ubuntu.*$ && $TARGET =~ ^i686.*$ ]]; then
    cargo install cross
+   sudo apt-get install -qq -y protobuf-compiler
 fi
