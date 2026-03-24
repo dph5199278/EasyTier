@@ -1,0 +1,2 @@
+[target.i686-unknown-linux-musl]
+image = "dph5199278/i686-unknown-linux-musl:0.2.5"
