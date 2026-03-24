@@ -60,6 +60,6 @@ else
     fi
 fi
 
-if [[ $OS =~ ^ubuntu.*$ && $TARGET =~ ^i686.*$ ]]; then
-   cargo install cross
-fi
+#if [[ $OS =~ ^ubuntu.*$ && $TARGET =~ ^i686.*$ ]]; then
+#   cargo install cross
+#fi
