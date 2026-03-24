@@ -8,7 +8,7 @@
 # dependencies are only needed on ubuntu as that's the only place where
 # we make cross-compilation
 if [[ $OS =~ ^ubuntu.*$ ]]; then
-    sudo apt-get update && sudo apt-get install -qq musl-tools libappindicator3-dev llvm clang gcc-multilib
+    sudo apt-get update && sudo apt-get install -qq musl-tools libappindicator3-dev llvm clang
     # https://github.com/cross-tools/musl-cross/releases
     # if "musl" is a substring of TARGET, we assume that we are using musl
     MUSL_TARGET=$TARGET
@@ -58,4 +58,8 @@ else
     if [[ $GUI_TARGET != '' ]]; then
         rustup target add $GUI_TARGET
     fi
+fi
+
+if [[ $OS =~ ^ubuntu.*$ && $TARGET =~ ^i686.*$ ]]; then
+   cargo install cross
 fi
