@@ -80,6 +80,9 @@ jobs:
           - TARGET: aarch64-unknown-linux-musl
             OS: ubuntu-22.04
             ARTIFACT_NAME: linux-aarch64
+          - TARGET: i686-unknown-linux-musl
+            OS: ubuntu-22.04
+            ARTIFACT_NAME: linux-i686
           - TARGET: x86_64-unknown-linux-musl
             OS: ubuntu-22.04
             ARTIFACT_NAME: linux-x86_64
