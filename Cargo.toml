@@ -24,6 +24,3 @@ lto = true
 codegen-units = 1
 opt-level = 3
 strip = true
-
-[dependencies]
-ring = { version = "0.17.14", features = ["precompiled"] }
