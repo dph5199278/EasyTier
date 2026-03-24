@@ -24,3 +24,9 @@ lto = true
 codegen-units = 1
 opt-level = 3
 strip = true
+
+[workspace.metadata.cross.target.target.i686-unknown-linux-musl]
+pre-build = [
+    "dpkg --add-architecture $CROSS_DEB_ARCH",
+    "apt-get update && apt-get --assume-yes install protobuf-compiler:$CROSS_DEB_ARCH"
+]
